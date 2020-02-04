@@ -386,7 +386,7 @@ a {
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
-.btn {
+button .btn {
   margin-top: 15px;
   width: 100%;
   color: #fff;
@@ -397,43 +397,38 @@ a {
   transition: background-color 0.15s ease-in;
 }
 @media (min-width: 768px) {
-  .btn {
+  button .btn {
     padding: 10px 30px;
   }
 }
-
-.default {
+button .default {
   background-color: #51ddfc;
 }
-.default:hover {
+button .default:hover {
   background-color: #9cecfd;
 }
-
-.error {
+button .error {
   background-color: #e4757a;
 }
-.error:hover {
+button .error:hover {
   background-color: #f1b5b8;
 }
-
-.info {
+button .info {
   background-color: #927bc1;
 }
-.info:hover {
+button .info:hover {
   background-color: #bdafd9;
 }
-
-.success {
+button .success {
   background-color: #63cc82;
 }
-.success:hover {
+button .success:hover {
   background-color: #9ddfb0;
 }
-
-.warning {
+button .warning {
   background-color: #fd7856;
 }
-.warning:hover {
+button .warning:hover {
   background-color: #feb4a2;
 }
 

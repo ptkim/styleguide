@@ -1,8 +1,8 @@
 /* ============================================= */
 /*              Buttons                          */
 /* ============================================= */
-
-.btn {
+button {
+  .btn {
     margin-top: 15px;
     width: 100%;
     color: #fff;
@@ -50,3 +50,5 @@
       background-color: lighten($color-warning, 15%);
     }
   }
+
+}
