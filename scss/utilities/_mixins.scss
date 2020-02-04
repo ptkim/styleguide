@@ -1,0 +1,6 @@
+// media query mixin for exceeds extra credit
+@mixin mq($size) {
+    @media (min-width: $size) {
+        @content;
+    }
+}
