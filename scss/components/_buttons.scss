@@ -13,10 +13,14 @@
     @include mq($tablet) {
       padding: 10px 30px;
     }
+    transition: background-color 0.15s ease-in;
   }
   
   .default {
     background-color: $color-default;
+    &:hover {
+      background-color: lighten($color-default, 15%);
+    }
   }
   
   .error {
