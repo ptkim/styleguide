@@ -3,12 +3,12 @@
 /* ============================================= */
 @media (min-width: $tablet) {
 
-    .container {
+/*     .container {
       max-width: 1400px;
       display: block;
       margin-left: auto;
       margin-right: auto;
-    }
+    } */
     
     .centered {
       display: block;
@@ -20,12 +20,12 @@
       flex-direction: row;
     } */
     
-    [class^=col] {
+/*     [class^=col] {
       display: flex;
       justify-content: center;
       margin-top: 0;
       align-items: center;
-    }
+    } */
     
     [class^=col] + [class^=col] {
       margin-left: 10px;
@@ -79,19 +79,19 @@
       flex-basis: 100%;
     }
     
-    .nav {
+/*     .nav {
       flex-direction: row;
       justify-content: flex-end;
       align-items: center;
-    }
+    } */
     
-    .nav-link {
+/*     .nav-link {
       flex-basis: 100px;
-    }
+    } */
     
-    .btn {
+    /* .btn {
       padding: 10px 30px;
-    }
+    } */
     
     .btn + .btn {
       margin-left: 10px;

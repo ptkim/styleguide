@@ -395,6 +395,11 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+}
 
 .default {
   background-color: #51ddfc;
@@ -450,6 +455,13 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
 
 .nav-link {
   text-align: center;
@@ -458,6 +470,11 @@ a {
   display: block;
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+@media (min-width: 768px) {
+  .nav-link {
+    flex-basis: 100px;
+  }
 }
 
 .nav-link:hover {
@@ -499,11 +516,24 @@ a {
 .container {
   padding: 0 10px;
 }
+@media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
 
 .row {
   display: flex;
   flex-direction: column;
   padding: 1em 10px;
+}
+@media (min-width: 768px) {
+  .row {
+    flex-direction: row;
+  }
 }
 
 [class^=col] {
@@ -512,6 +542,14 @@ a {
   min-height: 25px;
   padding: 10px;
   border-radius: 5px;
+}
+@media (min-width: 768px) {
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
 }
 
 .theme.col-1 {
@@ -570,30 +608,27 @@ a {
 /*              Media Queries                    */
 /* ============================================= */
 @media (min-width: 768px) {
-  .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
+  /*     .container {
+        max-width: 1400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      } */
   .centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .row {
-    flex-direction: row;
-  }
-
-  [class^=col] {
-    display: flex;
-    justify-content: center;
-    margin-top: 0;
-    align-items: center;
-  }
-
+  /*     .row {
+        flex-direction: row;
+      } */
+  /*     [class^=col] {
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+        align-items: center;
+      } */
   [class^=col] + [class^=col] {
     margin-left: 10px;
   }
@@ -646,20 +681,17 @@ a {
     flex-basis: 100%;
   }
 
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  .nav-link {
-    flex-basis: 100px;
-  }
-
-  .btn {
+  /*     .nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+      } */
+  /*     .nav-link {
+        flex-basis: 100px;
+      } */
+  /* .btn {
     padding: 10px 30px;
-  }
-
+  } */
   .btn + .btn {
     margin-left: 10px;
   }

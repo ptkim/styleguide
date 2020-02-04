@@ -4,6 +4,12 @@
 
 .container {
     padding: 0 10px;
+    @include mq($tablet) {
+      max-width: 1400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   //includes the media query mixin for exceeds extra credit
@@ -22,6 +28,12 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
+    @include mq($tablet) {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+    }
   }
   
   .theme.col-1 {
